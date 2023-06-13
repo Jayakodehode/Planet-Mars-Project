@@ -1,0 +1,220 @@
+/* ----------- homepage---------*/
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Bruno+Ace&family=League+Spartan:wght@400;500;700;900&family=Open+Sans&family=Ysabeau:wght@400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(6, 0, 0);
+  margin: 0 auto;
+
+  color: aliceblue;
+
+  max-width: 1100px;
+  min-height: 100vh;
+  font-family: "Bruno Ace", cursive;
+  font-size: 14px;
+
+  /*  display: flex;
+    justify-content: space-between;*/
+}
+.container {
+  background-image: url(../Planet-Mars-website/bgimage.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /*background-blend-mode: lighten;*/
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  /*background-color: brown;*/
+}
+.logo {
+  margin-left: 100px;
+}
+.navlinks {
+  list-style: none;
+}
+.navlinks li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.navlinks li a {
+  transition: all 0.8s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navlinks li a:hover {
+  color: brown;
+  font-size: 26px;
+}
+a {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 16px;
+}
+.description {
+  margin-top: 15%;
+  margin-left: 70%;
+  margin-right: 30px;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  height: 500px;
+  width: 400px;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  /* background-color: brown;*/
+}
+.description > h1 {
+  padding: 20px;
+}
+
+/*----------------***** section2 *****---------------------------*/
+.containerJAYA {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  /* max-width: 1100px;*/
+  min-height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  /*background-color: brown;*/
+}
+
+.img1JAYA {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  box-shadow: -60px -60px 10px rgb(201, 75, 75), 2px 2px 15px rgb(9, 9, 9);
+}
+.img2JAYA {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  box-shadow: 60px 60px 10px rgb(201, 75, 75);
+}
+.infoJAYA {
+  padding: 0 30px;
+  text-align: center;
+  width: 40%;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  /*font-size: 20px;*/
+  color: aliceblue;
+}
+/* -----------------**** section3 *****--------------------*/
+.containerJAYA2 {
+  display: grid;
+  grid-template-rows: 80px 3fr 3fr 3fr;
+
+  grid-template-columns: 3fr 3fr 3fr;
+
+  /* background-color: rgb(16, 16, 16);
+  border: 1px solid rgb(218, 175, 137);*/
+  justify-content: center;
+
+  /* width: 1400px;*/
+  min-height: 100vh;
+}
+.itemJAYA2 {
+  text-align: center;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-size: 16px;
+
+  padding: 50px;
+  /* border-bottom: 1px solid rgb(204, 155, 112);
+  border-right: 1px solid rgb(204, 155, 112);*/
+  justify-content: center;
+  align-items: end;
+}
+.item1JAYA2 {
+  text-align: center;
+  grid-row: span 1;
+  grid-column: span 3;
+  font-weight: 800;
+  font-size: 30px;
+  padding-top: 10px;
+  /*border-bottom: 2px solid rgb(204, 155, 112);*/
+}
+.itemJAYA2 > h3 {
+  padding: 20px;
+  font-size: 20px;
+}
+.numJAYA2 {
+  /*border: 1px solid rgb(204, 155, 112);*/
+  border-radius: 20%;
+  background-color: brown;
+}
+/*  ------------ ***** section4 *****-----------*/
+.sec4heading {
+  background-color: brown;
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+}
+.sec4imgcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 1500px;
+  min-width: 400px;*/
+  gap: 20px 20px;
+
+  justify-content: center;
+  align-content: center;
+}
+/*.sec4heading {
+  justify-content: center;
+  display: block;
+  padding: 5px;
+  margin: 0 auto;
+}*/
+
+.sec4img-wrap {
+  margin: 40px 20px;
+  position: relative;
+  width: 400px;
+  height: 350px;
+}
+.sec4img-wrap > img {
+  border-radius: 30px;
+}
+.sec4img-cls {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.sec4img-des {
+  position: absolute;
+  inset: 0;
+  /*background: rgba(6, 6, 6, 0.72);*/
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: 0.5s, linear;
+}
+.sec4img-wrap:hover .sec4img-des {
+  opacity: 1;
+  background-color: black;
+  border-radius: 30px;
+}
+.sec4text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+
+  padding: 50px;
+}

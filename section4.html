@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .imgcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1500px;
+        min-width: 400px;
+        gap: 20px 20px;
+        margin: 5px auto;
+        justify-content: center;
+        background-color: black;
+        padding: 10px;
+      }
+
+      .img-wrap {
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+      .img-cls {
+        display: block;
+        width: 400px;
+        height: 300px;
+        box-shadow: 2px 2px 4px brown, -2px -2px 4px brown;
+      }
+      .img-des {
+        position: absolute;
+        inset: 0;
+        /*background: rgba(6, 6, 6, 0.72);*/
+        opacity: 0;
+
+        /* transition effect. not necessary */
+        transition: 0.5s, linear;
+      }
+      .img-wrap:hover .img-des {
+        opacity: 1;
+        background-color: brown;
+        box-shadow: 2px 2px 3px grey, -2px -2px 3px grey;
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 30px;
+      }
+
+      h2 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imgcontainer">
+      <!--image1-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/curiosity rover.jpg"
+          alt="curiosity rover"
+        />
+        <h2>Curiosity rover</h2>
+
+        <div class="img-des">
+          <p class="text">
+            Curiosity is the largest and most capable rover ever sent to Mars.
+            It launched November 26, 2011 and landed on Mars at 10:32 p.m. PDT
+            on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012).
+          </p>
+        </div>
+      </div>
+      <!--image2-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/maven.jpg"
+          alt="Maven"
+        />
+        <h2>Maven</h2>
+
+        <div class="img-des">
+          <p class="text">
+            MAVEN is obtaining critical measurements of the Martian atmosphere
+            to help understand dramatic climate change on the red planet over
+            its history.
+          </p>
+        </div>
+      </div>
+      <!--image3-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/preservarancerover.jpg"
+          alt="preservarancerover"
+        />
+        <h2>Preservarancerover</h2>
+
+        <div class="img-des">
+          <p class="text">
+            The mission also provides opportunities to gather knowledge and
+            demonstrate technologies that address the challenges of future human
+            expeditions to Mars
+          </p>
+        </div>
+      </div>
+      <!--image4-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/exomars-2016-tgo.jpg"
+          alt="Exo Mars"
+        />
+        <h2>Exo Mars</h2>
+
+        <div class="img-des">
+          <p class="text">
+            The first mission in the ExoMars program is called the Trace Gas
+            Orbiter (TGO), undertaken in partnership between ESA and Russia's
+            Federal Space Agency, Roscosmos. ESA's Trace Gas Orbiter studies the
+            Martian atmosphere for the presence of methane and other gases that
+            may be present in small concentrations
+          </p>
+        </div>
+      </div>
+      <!--image5-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/Mars Reconnaissance Orbiter.jpg"
+          alt="Reconnaissance Orbiter"
+        />
+        <h2>Reconnaissance Orbiter</h2>
+
+        <div class="img-des">
+          <p class="text">
+            NASA's Mars Reconnaissance Orbiter, launched in August, 2005,
+            carries the most powerful camera ever flown on a planetary
+            exploration mission for homing in on details of Martian terrain with
+            extraordinary clarity.
+          </p>
+        </div>
+      </div>
+      <!--image6-->
+      <div class="img-wrap">
+        <img
+          class="img-cls"
+          src="../Planet Mars website/mars-odyssey.jpg"
+          alt="Mars odyssey"
+        />
+        <h2>Mars odyssey</h2>
+
+        <div class="img-des">
+          <p class="text">
+            The 2001 Mars Odyssey mission is NASA's longest-lasting spacecraft
+            at Mars.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
