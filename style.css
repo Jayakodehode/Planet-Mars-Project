@@ -23,11 +23,10 @@ body {
     justify-content: space-between;*/
 }
 .container {
-  /* background-image: url(../Planet-Mars-website/bgimage.webp);
+  background-image: url(./Images/bgimage.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-blend-mode: lighten;*/
 }
 
 header {
