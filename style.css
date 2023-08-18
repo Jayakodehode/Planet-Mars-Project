@@ -23,9 +23,6 @@ body {
     justify-content: space-between;*/
 }
 .container {
-  background-image: url(./Images/bgimage.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -61,8 +58,26 @@ a {
   font-weight: 600;
   font-size: 16px;
 }
+.homepage-container {
+  display: flex;
+  height: 70rem;
+  min-height: 100vh;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+.homepage-container .bgimage {
+  flex: 1 1 40%;
+  background-color: brown;
+}
+.homepage-container .bgimage {
+  background-image: url("./Images/bgimage.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
 .description {
-  margin-top: 15%;
+  flex: 0 1 40%;
+  /*margin-top: 15%;
   margin-left: 70%;
   margin-right: 30px;
   text-align: center;
@@ -73,23 +88,26 @@ a {
   line-height: 1.2em;
   letter-spacing: 0.5px;
   font-size: 16px;
-  /* background-color: brown;*/
+   background-color: brown;*/
 }
 .description > h1 {
   padding: 20px;
 }
 
 /*----------------***** section2 *****---------------------------*/
-.containerJAYA {
+.about-container {
   position: relative;
   display: flex;
   justify-content: right;
   align-content: center;
   /* max-width: 1100px;*/
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 10rem auto;
   align-items: center;
   /*background-color: brown;*/
+}
+.imgcontainer {
+  width: 50%;
 }
 
 .img1JAYA {
@@ -106,13 +124,12 @@ a {
   box-shadow: 60px 60px 10px rgb(201, 75, 75);
 }
 .infoJAYA {
-  padding: 0 30px;
+  padding: 0 20px;
   text-align: center;
   width: 40%;
-  line-height: 1.2em;
-  letter-spacing: 1px;
-  /*font-size: 20px;*/
-  color: aliceblue;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 /* -----------------**** section3 *****--------------------*/
 .containerJAYA2 {
@@ -127,6 +144,7 @@ a {
 
   /* width: 1400px;*/
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 .itemJAYA2 {
   text-align: center;
@@ -159,11 +177,12 @@ a {
   background-color: brown;
 }
 /*  ------------ ***** section4 *****-----------*/
-.sec4heading {
+.sec4-missions {
   background-color: brown;
   justify-content: center;
   margin: 0 auto;
   display: block;
+  min-height: 100vh;
 }
 .sec4imgcontainer {
   display: flex;
@@ -175,12 +194,6 @@ a {
   justify-content: center;
   align-content: center;
 }
-/*.sec4heading {
-  justify-content: center;
-  display: block;
-  padding: 5px;
-  margin: 0 auto;
-}*/
 
 .sec4img-wrap {
   margin: 40px 20px;
