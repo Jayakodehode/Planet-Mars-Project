@@ -1,5 +1,6 @@
 /* ----------- homepage---------*/
-@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Bruno+Ace&family=League+Spartan:wght@400;500;700;900&family=Open+Sans&family=Ysabeau:wght@400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap&family=Bruno+Ace");
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -16,7 +17,8 @@ body {
 
   max-width: 1100px;
   min-height: 100vh;
-  font-family: "Bruno Ace", cursive;
+
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
 
   /*  display: flex;
@@ -32,9 +34,11 @@ header {
   align-items: center;
   padding: 10px 10px;
   /*background-color: brown;*/
+  margin-top: 1rem;
 }
 .logo {
   margin-left: 100px;
+  background-color: lightsalmon;
 }
 .navlinks {
   list-style: none;
@@ -48,6 +52,7 @@ header {
   transition: all 0.8s ease-in-out;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Bruno Ace", cursive;
 }
 .navlinks li a:hover {
   color: brown;
@@ -62,52 +67,48 @@ a {
   display: flex;
   height: 70rem;
   min-height: 100vh;
-  margin-top: 10rem;
+  margin-top: 3rem;
   gap: 2rem;
 }
-.homepage-container .bgimage {
-  flex: 1 1 40%;
-  background-color: brown;
-}
-.homepage-container .bgimage {
-  background-image: url("./Images/bgimage.webp");
+
+.homepage-container .bgimage img {
+  width: 75rem;
+  height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
+  position: absolute;
 }
 .description {
-  flex: 0 1 40%;
-  /*margin-top: 15%;
-  margin-left: 70%;
-  margin-right: 30px;
+  top: 15rem;
+  left: 65%;
   text-align: center;
-  padding: 5px;
+  padding: 1rem;
   position: relative;
-  height: 500px;
-  width: 400px;
+  height: 40rem;
+  width: 30rem;
   line-height: 1.2em;
-  letter-spacing: 0.5px;
-  font-size: 16px;
-   background-color: brown;*/
+  font-size: 1.2rem;
 }
 .description > h1 {
   padding: 20px;
+  font-family: "Bruno Ace", cursive;
 }
 
 /*----------------***** section2 *****---------------------------*/
 .about-container {
   position: relative;
   display: flex;
-  justify-content: right;
+
   align-content: center;
   /* max-width: 1100px;*/
   min-height: 100vh;
-  margin: 10rem auto;
+  justify-content: space-between;
   align-items: center;
   /*background-color: brown;*/
 }
 .imgcontainer {
-  width: 50%;
+  width: 40%;
 }
 
 .img1JAYA {
@@ -124,12 +125,12 @@ a {
   box-shadow: 60px 60px 10px rgb(201, 75, 75);
 }
 .infoJAYA {
+  width: 40%;
   padding: 0 20px;
   text-align: center;
-  width: 40%;
-  line-height: 1.2rem;
-  letter-spacing: 2px;
-  font-size: 1rem;
+
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 /* -----------------**** section3 *****--------------------*/
 .containerJAYA2 {
@@ -150,7 +151,7 @@ a {
   text-align: center;
   line-height: 1.2em;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 1.1rem;
 
   padding: 50px;
   /* border-bottom: 1px solid rgb(204, 155, 112);
@@ -165,11 +166,13 @@ a {
   font-weight: 800;
   font-size: 30px;
   padding-top: 10px;
+  font-family: "Bruno Ace", cursive;
   /*border-bottom: 2px solid rgb(204, 155, 112);*/
 }
 .itemJAYA2 > h3 {
   padding: 20px;
   font-size: 20px;
+  font-family: "Bruno Ace", cursive;
 }
 .numJAYA2 {
   /*border: 1px solid rgb(204, 155, 112);*/
@@ -183,6 +186,7 @@ a {
   margin: 0 auto;
   display: block;
   min-height: 100vh;
+  margin-bottom: 2rem;
 }
 .sec4imgcontainer {
   display: flex;
@@ -204,6 +208,10 @@ a {
 .sec4img-wrap > img {
   border-radius: 30px;
 }
+.sec4img-wrap h2 {
+  padding: 1rem;
+  font-family: "Bruno Ace", cursive;
+}
 .sec4img-cls {
   display: block;
   width: 400px;
@@ -216,10 +224,10 @@ a {
   opacity: 0;
 
   /* transition effect. not necessary */
-  transition: 0.5s, linear;
+  transition: 1s, ease-in-out;
 }
 .sec4img-wrap:hover .sec4img-des {
-  opacity: 1;
+  opacity: 0.7;
   background-color: black;
   border-radius: 30px;
 }
@@ -227,6 +235,6 @@ a {
   color: white;
   font-size: 16px;
   text-align: center;
-
+  font-size: 1.1rem;
   padding: 50px;
 }
